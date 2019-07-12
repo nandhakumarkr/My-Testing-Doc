@@ -1,4 +1,0 @@
- System.setProperty("webdriver.gecko.driver","Path of driver");
- FirefoxOptions fiOptions= new FirefoxOptions();
-	fiOptions.addArguments("--headless");
-	WebDriver driver= new FirefoxDriver(fiOptions);
