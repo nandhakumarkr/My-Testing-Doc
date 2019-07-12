@@ -1,0 +1,7 @@
+     System.setProperty("webdriver.chrome.driver", "Path of driver");
+	   
+	   ChromeOptions chOptions= new ChromeOptions();
+	   chOptions.addArguments("--headless");
+	   WebDriver driver= new ChromeDriver(chOptions);
+	   driver.get("http://www.google.com");
+	   System.out.println(driver.getTitle());
