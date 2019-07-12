@@ -1,0 +1,29 @@
+    System.setProperty("webdriver.gecko.driver", "/home/nandhakumar/eclipse-workspace/Driver/geckodriver");
+		WebDriver driver= new FirefoxDriver();
+		driver.get("http://demo.guru99.com/V4/");
+		
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+    
+		    //js.executeScript("document.getElementById('').value='someValue';");
+				
+        //to refresh window
+				js.executeScript("history.go(0)");
+				
+        //print alert
+				js.executeScript("alert('Welcome To SoftwareTestingMaterial');");
+				Thread.sleep(2000);
+				
+        //to get inner text of web page
+				String innerText = js.executeScript("return document.documentElement.innerText;").toString();
+				System.out.println(innerText);
+				
+        //to get Title Page
+				String title= js.executeScript("return document.title;").toString();
+				System.out.println(title);
+				
+        //to  get domain
+				String domain = js.executeScript("return document.domain").toString();
+				System.out.println(domain);
+				
+        //move to new location
+				js.executeScript("window.location = 'https://www.softwaretestingmaterial.com'");
