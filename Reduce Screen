@@ -1,0 +1,8 @@
+//add the Bellow code immidiatly after navigate/get to web
+
+robot1.keyPress(KeyEvent.VK_CONTROL);
+	robot1.keyPress(KeyEvent.VK_MINUS);
+	Thread.sleep(540);
+	robot1.keyRelease(KeyEvent.VK_CONTROL);
+	robot1.keyRelease(KeyEvent.VK_MINUS);
+	Thread.sleep(2000);
